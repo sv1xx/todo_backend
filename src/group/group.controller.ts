@@ -10,7 +10,7 @@ import {
   HttpStatus,
 } from '@nestjs/common';
 import { GroupService } from './group.service';
-import { JwtAuthGuard } from 'src/auth/jwt-auth.guard';
+import { JwtAuthGuard } from 'src/guards/jwt-auth.guard';
 import { ZodBody } from 'src/common/decorators/zod-body.decorator';
 import { createGroupSchema } from './dto/create-group.dto';
 import { updateGroupSchema } from './dto/update-group.dto';

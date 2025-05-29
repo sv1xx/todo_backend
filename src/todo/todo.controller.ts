@@ -9,8 +9,8 @@ import {
   UseGuards,
   ParseIntPipe,
 } from '@nestjs/common';
-import { JwtAuthGuard } from '../auth/jwt-auth.guard';
-import { User } from '../auth/get-user.decorator';
+import { JwtAuthGuard } from '../guards/jwt-auth.guard';
+import { User } from '../common/decorators/get-user.decorator';
 import { TodoService } from './todo.service';
 import {
   ApiBearerAuth,
